@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>	
+	  <Description>Provides a lightweight library for building Onion Architecture and CQRS-based applications in .NET 7 with MediatR, offering essential interfaces for defining query and command request handlers.</Description>
+	  <VersionPrefix>1.0.0</VersionPrefix>
+	  <RepositoryUrl>https://github.com/Dtopiast/OnionCrafter.Feature.Handler.Base</RepositoryUrl>
+  	  <PackageTags>mediatr, mediatr-extension,query-handlers, command-handlers, onion-architecture, cqrs, application-framework</PackageTags>
+
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <IncludeSymbols>True</IncludeSymbols>
+	  <Copyright>Copyright 2023 Dtopiast</Copyright>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+	  <FileVersion>$(VersionPrefix)</FileVersion>
+	  <Version>$(VersionPrefix)</Version>
+	  <Authors>Dtopiast</Authors>
+	  <TargetFramework>net7.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <PackageIcon>JustLogo.png</PackageIcon>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <RepositoryType>git</RepositoryType>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+<ItemGroup>
+    <None Include="..\..\Images\JustLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+	<PackageReference Include="OnionCrafter.Dto.Base" Version="1.0.0" />
+	<PackageReference Include="OnionCrafter.Wrapper.Request.Base" Version="1.0.0" />
+</ItemGroup> 
+
+</Project>
