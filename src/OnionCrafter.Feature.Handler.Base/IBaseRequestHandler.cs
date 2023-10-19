@@ -17,7 +17,8 @@ namespace OnionCrafter.Feature.Handler.Base
     /// <typeparam name="TRequestSchema">The type of the request schema.</typeparam>
     /// <typeparam name="TResponseSchema">The type of the response schema.</typeparam>
 
-    public interface IBaseRequestHandler<TRequestSchema, TResponseSchema> : IBaseRequestHandler
+    public interface IBaseRequestHandler<TRequestSchema, TResponseSchema> :
+        IBaseRequestHandler, IRequestHandler<TRequestSchema, TResponseSchema>
         where TRequestSchema : IBaseRequestSchema, IRequest<TResponseSchema>
         where TResponseSchema : IBaseResponseSchema
     {
